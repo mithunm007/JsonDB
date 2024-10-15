@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html lang="en"> 
+<head> 
+    <title>Student Enrollment Form</title> 
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    <!-- Bootstrap 3.4.1 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+
+    <!-- jQuery 3.5.1 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+
+    <!-- Bootstrap 3.4.1 JS -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+
+    <!-- jpdb-commons.js -->
+    <script src="http://login2explore.com/jpdb/resources/js/0.0.3/jpdb-commons.js"></script> 
+</head> 
+<body> 
+    <div class="container"> 
+        <h2>Student Enrollment Form</h2> 
+        <form id="studentForm" method="post"> 
+            <!-- Roll Number -->
+            <div class="form-group"> 
+                <span>
+                    <label for="rollNo">Roll Number (Primary Key):</label> 
+                    <label id="rollNoMsg" class="text-danger"></label>
+                </span> 
+            </div> 
+            <input type="text" class="form-control" name="rollNo" id="rollNo" 
+                   placeholder="Enter Roll Number" required> 
+
+            <!-- Full Name -->
+            <div class="form-group"> 
+                <label for="fullName">Full Name:</label> 
+                <input type="text" class="form-control" id="fullName" 
+                       placeholder="Enter Full Name" name="fullName" required> 
+            </div> 
+
+            <!-- Class -->
+            <div class="form-group"> 
+                <label for="class">Class:</label> 
+                <input type="text" class="form-control" id="class" 
+                       placeholder="Enter Class" name="class" required> 
+            </div> 
+
+            <!-- Birth Date -->
+            <div class="form-group"> 
+                <label for="birthDate">Birth Date:</label> 
+                <input type="date" class="form-control" id="birthDate" 
+                       name="birthDate" required> 
+            </div> 
+
+            <!-- Address -->
+            <div class="form-group"> 
+                <label for="address">Address:</label> 
+                <textarea class="form-control" id="address" name="address" rows="3" 
+                          placeholder="Enter Address" required></textarea> 
+            </div> 
+
+            <!-- Enrollment Date -->
+            <div class="form-group"> 
+                <label for="enrollmentDate">Enrollment Date:</label> 
+                <input type="date" class="form-control" id="enrollmentDate" 
+                       name="enrollmentDate" required> 
+            </div> 
+
+            <!-- Buttons -->
+            <button type="button" class="btn btn-primary" id="studentSave">Save</button> 
+            <button type="button" class="btn btn-success" id="studentUpdate" disabled>Update</button> 
+            <button type="reset" class="btn btn-warning" id="studentReset">Reset</button> 
+        </form> 
+    </div> 
+
+    <!-- Custom JavaScript File -->
+    <script src="script.js"></script>
+</body>
+</html>
